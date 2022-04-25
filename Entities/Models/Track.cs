@@ -22,7 +22,7 @@ namespace Entities.Models
         public DateTime? DateAdded { get; set; }
 
         [ForeignKey(nameof(User))]
-        public Guid UserId { get; set; }
+        public string? UserId { get; set; }
         public User? UserAdded { get; set; }
 
         [ForeignKey(nameof(Genre))]
